@@ -85,3 +85,57 @@ function createFileName(name, ext)
   return f.trim();
 }
 console.log(createFileName("kjljl", "ljlj"));
+
+// ===============================
+function calculateTotal(number) {
+  let sum = 0;
+  let a = 1;
+    while (a <= number) {
+    sum += a;
+    a += 1;
+  }
+  return sum;
+  }
+console.log(calculateTotal(3));
+
+// ================================
+function calculateTotal(number) {
+  let sum = 0;
+  for (let a = 1; a <= number; a += 1) {
+  sum += a;
+    
+}
+  return sum;
+}
+console.log(calculateTotal(9));
+// =====================
+function calculateEvenTotal(number) {
+  let sum = 0;
+  for (let a = 1; a <= number; a++) {
+    if (a % 2 === 0) {
+     sum += a
+    };
+   
+  } return sum;
+}
+console.log(calculateEvenTotal(6));
+// ===========================
+const start = 6;
+const end = 17;
+let number;
+for (let a = start; a <= end; a++) {
+  if (a % 5 === 0) {
+    number = a;
+  
+  break;
+  }
+} console.log(number);
+// ===========================
+function findNumber(start, end, divisor) {
+  for (let a = start; a <= end; a++) {
+    if (a % divisor === 0) {
+      return a
+  };
+  }
+}
+console.log(findNumber(16, 35, 7));
