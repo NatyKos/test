@@ -135,7 +135,7 @@ function findNumber(start, end, divisor) {
   for (let a = start; a <= end; a++) {
     if (a % divisor === 0) {
       return a
-  };
+    }
   }
 }
 console.log(findNumber(16, 35, 7));
